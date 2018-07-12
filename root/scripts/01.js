@@ -7,4 +7,4 @@ $(function(){
     }, 700);
 });
 
-});
+}); // <<------- END OF MAIN FUNCTION HERE -------- //
