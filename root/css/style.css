@@ -14,7 +14,7 @@
 
 :root
 {
-  --bd-bg: #363636;
+  --bd-bg: #262626;
   --hero-c: #ffc30b;
   --h3-c: tomato;
   --p-c: rgb(117, 117, 117);
@@ -114,13 +114,24 @@ p
 {
   width: 300px;
   height: 200px;
-  border: 1px solid var(--hero-c);
+  /* border: 1px solid var(--hero-c); */
   overflow: hidden;
   margin-top: 20px;
   cursor: pointer;
+  background-image: url('../images/Js_jQ.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
   -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
   box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+  transition: .5s;
+}
+
+.item:hover
+{
+  transform: scale(1.1);
 }
 
 
@@ -129,7 +140,7 @@ p
 {
   position: absolute;
   top:90%;
-  margin-left: 92%;
+  margin-left: 95%;
   position: fixed;
   background: var(--hero-c);
   color: #363636;
@@ -144,6 +155,13 @@ p
   -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
   box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+  opacity: .3;
+  transition: .5s;
+}
+
+#top:hover
+{
+  opacity: 1;
 }
 
 /* ----------- FOOTER ------------- */
