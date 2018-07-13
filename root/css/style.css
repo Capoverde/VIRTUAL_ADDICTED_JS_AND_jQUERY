@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Muli:200,300,400');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900');
 
 *, *::before, *::after
 {
@@ -15,10 +16,11 @@
 {
   --bd-bg: #363636;
   --hero-c: #ffc30b;
+  --h3-c: tomato;
   --p-c: rgb(117, 117, 117);
   --shd: -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
-         -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
-         box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+    box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
 }
 
 body
@@ -26,7 +28,7 @@ body
   background: var(--bd-bg);
 }
 
-h1 a
+a
 {
   text-decoration: none;
   color: var(--hero-c);
@@ -39,11 +41,44 @@ h1
   text-shadow: 2px 4px rgba(0,0,0,.5);
 }
 
+hr
+{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 195, 11, 0), rgba(255, 195, 11, 0.75), rgba(255, 195, 11, 0));
+}
+
 h1:hover 
 {
   filter: brightness(125%);
-  border-bottom: 1px solid var(--hero-c);
 }
+
+nav
+{
+  width: 100%;
+  height: 60px;
+}
+
+a h3
+{
+  text-align: center;
+  color: var(--h3-c);
+  font-family: 'Orbitron';
+  letter-spacing: 4px;
+}
+
+a h3:hover::before
+{
+  content:'link do kanału';
+  color: var(--p-c);
+  font-size: 10px;
+  font-family: 'Lato';
+  background: #000000;
+  position: absolute;
+  transform: translate(40px, -15px);
+  border: 1px solid var(--p-c);
+}
+
 
 h4
 {
@@ -63,13 +98,11 @@ p
 
 .container
 {
-  margin:0 30px;
+  margin: 90px auto;
   width: 90%;
   height: auto;
   border: 1px solid red;
-  display: grid;
-  grid-template-columns: 4;
-  grid-template-rows: 7;
+  /* display:flex; */
 }
 
 .item
@@ -77,6 +110,7 @@ p
   width: 300px;
   height: 200px;
   border: 1px solid var(--hero-c);
+  overflow: hidden;
 }
 
 
@@ -84,6 +118,7 @@ p
 #top
 {
   position: absolute;
+  top:90%;
   margin-left: 92%;
   position: fixed;
   background: var(--hero-c);
