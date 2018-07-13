@@ -18,6 +18,7 @@
   --hero-c: #ffc30b;
   --h3-c: tomato;
   --p-c: rgb(117, 117, 117);
+  --footer-bg: #b38e21; 
   --shd: -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
     box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
@@ -136,4 +137,23 @@ p
   -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
   box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+}
+
+/* ----------- FOOTER ------------- */
+
+footer
+{
+  height: 30vh;
+  width: 100%;
+  background: var(--footer-bg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot
+{
+  width: 400px;
+  height: 200px;
+  border: 1px solid #000;
 }
