@@ -65,6 +65,8 @@ a h3
   color: var(--h3-c);
   font-family: 'Orbitron';
   letter-spacing: 4px;
+  text-shadow: 2px 4px rgba(0,0,0,.5);
+  
 }
 
 a h3:hover::before
