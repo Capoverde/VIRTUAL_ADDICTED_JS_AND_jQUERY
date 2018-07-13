@@ -104,8 +104,10 @@ p
   margin: 90px auto;
   width: 90%;
   height: auto;
-  border: 1px solid red;
-  /* display:flex; */
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .item
@@ -114,6 +116,11 @@ p
   height: 200px;
   border: 1px solid var(--hero-c);
   overflow: hidden;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
+  box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
 }
 
 
