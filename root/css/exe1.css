@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Muli:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+*, *::before, *::after
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root
+{
+  --body-bg: rgb(108, 135,139);
+  --btn1-bg: rgb(120, 135, 138);
+  --btn1-c: #ffffff;
+}
+ 
+body{
+  background: var(--body-bg);
+}
+
+#btn1
+{
+   position: absolute;
+   top: 20%;
+   left: 50%; 
+   transform: translate(-50%, -50%);
+   padding: 20px 30px;
+   font-size: 20px;
+   background: var(--btn1-bg);
+   color: var(--btn1-c);
+   cursor: pointer;
+   outline: none;
+   border-radius: 5px;
+   -webkit-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.75);
+   box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.75);
+}
