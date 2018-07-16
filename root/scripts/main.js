@@ -8,3 +8,15 @@ $(function(){
   });
   
   }); // <<------- END OF MAIN FUNCTION HERE -------- //
+
+  let item = document.querySelectorAll('.item');
+  console.log(item);
+  function Redborder(e){
+      e.preventDefault();
+  item.forEach(item => {
+      classList.add('_redBorder');
+      
+  });
+  };
+ 
+  item.addEventListener('click', Redborder);
