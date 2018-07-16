@@ -15,7 +15,6 @@ $(function(){
       e.preventDefault();
   item.forEach(item => {
       classList.add('_redBorder');
-      
   });
   };
  
