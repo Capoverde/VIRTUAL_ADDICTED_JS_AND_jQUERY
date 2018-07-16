@@ -21,7 +21,7 @@
   --h4-c: #545454;
   --p-c: #eeeeee;
   --details-c: #ffffff;
-  --footer-bg: #b38e21; 
+  --footer-bg: #000000; 
   --shd: -webkit-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
     box-shadow: 1px 6px 25px 2px rgba(0,0,0,0.75);
@@ -209,5 +209,11 @@ footer
 {
   width: 400px;
   height: 200px;
-  border: 1px solid #000;
+  border: 1px solid red;
 }
+
+._redBorder
+{
+  border: 1px solid red;
+}
+
